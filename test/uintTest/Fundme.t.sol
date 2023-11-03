@@ -2,7 +2,7 @@
 pragma solidity ^0.8.19;
 import {Test,console} from "../../lib/forge-std/src/Test.sol";
 import {FundMe} from "../../src/Fundme.sol";
-import {Script} from "forge-std/Script.sol";
+import {Script} from "../../lib/forge-std/src/Script.sol";
 import {DeployFundMe} from "../../script/DeployFundMe.s.sol";
 
 contract FundmeTest is Test {
@@ -11,8 +11,7 @@ contract FundmeTest is Test {
     address ownerAddress;
     uint constant send_value = 1 ether;
     uint constant starting_balance = 10 ether;
-
-
+    
     address user = makeAddr("user");
 
     function setUp () external {

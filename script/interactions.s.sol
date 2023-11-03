@@ -2,7 +2,7 @@
 pragma solidity ^0.8.19;
 //fund
 //withdraw
-import {Script,console} from "forge-std/Script.sol";
+import {Script,conole} from "../lib/forge-std/src/Script.sol";
 import {DevOpsTools} from "lib/foundry-devops/src/DevOpsTools.sol";
 import {FundMe} from "../src/Fundme.sol";
 
